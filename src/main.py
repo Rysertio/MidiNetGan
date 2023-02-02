@@ -66,6 +66,8 @@ def main():
                     device=device, is_chord=is_chord, epochs=epochs)
 
     plot_loss(*extract_loss(training_run))
+    torch.save(modelG.state_dict(), 'g.pth')
+    torch.save(modelD.state_dict(), 'd.pth')
 
 if __name__ == '__main__':
     main()
