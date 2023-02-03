@@ -33,7 +33,7 @@ def main():
     lr = 2e-4
     lr_scale_g = 0.25
     betas = (0.5, 0.99)
-    epochs = 20
+    epochs = 400
     nz = 30
     is_chord = False
     chord_dims = (13,1)
